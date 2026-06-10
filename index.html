@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Reportes - PWD 7° 2°B</title>
+  <link rel="stylesheet" href="./CSS/styles.css">
+
+</head>
+<body>
+
+  <div class="card">
+
+    <!-- Encabezado de la tarjeta -->
+    <div class="card-header">
+      <span class="icono">📄</span>
+      <h1>Generador de Reportes PDF</h1>
+      <p>EEST N°1 · PWD 7° 2°B · Actividad 10</p>
+    </div>
+
+    <!-- Campo 1: Nombre -->
+    <div class="campo">
+      <label for="inputNombre">👤 Nombre del Operador / Alumno</label>
+      <input type="text" id="inputNombre" placeholder="Ej: Enzo Puntano">
+    </div>
+
+    <!-- Campo 2: Detalle -->
+    <div class="campo">
+      <label for="inputDetalle">📝 Detalle o Descripción del Registro</label>
+      <input type="text" id="inputDetalle" placeholder="Ej: Sensor calibrado y operativo">
+    </div>
+
+    <!-- Campo 3: Materia (extra para mostrar más datos en el PDF) -->
+    <div class="campo">
+      <label for="inputMateria">📚 Materia o Área</label>
+      <input type="text" id="inputMateria" placeholder="Ej: Proyecto de Sitios Web Dinámicos">
+    </div>
+
+    <!-- Botón que llama a la función de JavaScript -->
+    <button class="btn-generar" onclick="descargarReporte()">
+      ⬇️ Generar y Descargar PDF
+    </button>
+
+    <!-- Mensaje que aparece cuando el PDF se generó bien -->
+    <div class="mensaje-exito" id="mensajeExito">
+      ✅ ¡PDF generado correctamente! Revisá tu carpeta de descargas.
+    </div>
+
+    <div class="card-footer">
+      Powered by jsPDF · Documento generado en el navegador, sin servidor.
+    </div>
+
+  </div>
+
+  <script src="./JS/script.js"></script>
+
+  <!-- =============================================
+       IMPORTACIÓN DE LA LIBRERÍA jsPDF VÍA CDN
+       (No hace falta descargar nada, se carga desde internet)
+  ============================================== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <!-- Archivo con la lógica en JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+ /* ESTILOS GENERALES */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+ 
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #eef2f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+ 
+    /* TARJETA PRINCIPAL */
+    .card {
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+      padding: 36px 32px;
+      width: 100%;
+      max-width: 440px;
+    }
+ 
+    /* ENCABEZADO */
+    .card-header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+ 
+    .card-header .icono {
+      font-size: 42px;
+      display: block;
+      margin-bottom: 8px;
+    }
+ 
+    .card-header h1 {
+      font-size: 20px;
+      color: #1a3a6b;
+      font-weight: 700;
+    }
+ 
+    .card-header p {
+      font-size: 13px;
+      color: #7a8599;
+      margin-top: 4px;
+    }
+ 
+    /* CAMPOS DEL FORMULARIO */
+    .campo {
+      margin-bottom: 18px;
+    }
+ 
+    .campo label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: #3a4a63;
+      margin-bottom: 6px;
+    }
+ 
+    .campo input {
+      width: 100%;
+      padding: 11px 14px;
+      border: 1.5px solid #d0d7e3;
+      border-radius: 8px;
+      font-size: 14px;
+      color: #2c3e50;
+      transition: border-color 0.2s;
+      background-color: #fafbfc;
+    }
+ 
+    .campo input:focus {
+      outline: none;
+      border-color: #3b7dd8;
+      background-color: #fff;
+    }
+ 
+    /* BOTÓN PRINCIPAL */
+    .btn-generar {
+      width: 100%;
+      padding: 13px;
+      background-color: #3b7dd8;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background-color 0.2s, transform 0.1s;
+      margin-top: 6px;
+    }
+ 
+    .btn-generar:hover {
+      background-color: #2c65b8;
+    }
+ 
+    .btn-generar:active {
+      transform: scale(0.98);
+    }
+ 
+    /* MENSAJE DE ÉXITO */
+    .mensaje-exito {
+      display: none;
+      margin-top: 16px;
+      padding: 12px 16px;
+      background-color: #e8f5e9;
+      border: 1px solid #a5d6a7;
+      border-radius: 8px;
+      color: #2e7d32;
+      font-size: 14px;
+      text-align: center;
+    }
+ 
+    /* PIE DE PÁGINA */
+    .card-footer {
+      text-align: center;
+      margin-top: 24px;
+      font-size: 11px;
+      color: #aab0be;
+    }
